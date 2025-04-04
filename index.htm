@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO BHAGSU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        section {
+            position: relative; /* Needed for absolute positioning */
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section {
+            background-color: lightblue;
+        }
+        .details {
+            display: none; /* Initially hidden */
+            margin-top: 10px;
+            padding: 10px;
+            background: white;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .best {
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+        }
+        .click-here {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+        /* Popup Styling */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            max-width: 500px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            display: none;
+            max-height: 90vh;
+            overflow: auto;
+            z-index: 1000;
+        }
+        .popup img {
+            width: 100%;
+            max-height: 70vh;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+        .popup button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+        }
+        .popup button:hover {
+            background-color: #cc5200;
+        }
+
+
+    </style>
+</head>
+<body>
+
+ <!-- Popup -->
+    <div class="popup" id="welcomePopup">
+    <h2><b>WELCOME TO BHAGSU!</b></h2> 
+        <img src="https://i.postimg.cc/Ss9ZGk8k/mm3.webp">
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("welcomePopup").style.display = "block";
+        };
+
+        function closePopup() {
+            document.getElementById("welcomePopup").style.display = "none";
+        }
+    </script>
+
+
+    <h2 style="text-align: center;">BHAGSU</h2>
+
+    <section class="section" onclick="toggleDetails('section1')">
+        <span class="click-here">Click Here</span>
+        <h2>BREAKFAST</h2>
+        <div id="section1" class="details">
+        <div <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAKFAST</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .menu-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h1 {
+            color: #d9534f;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .item-name {
+            flex: 1;
+            text-align: left;
+            padding-left: 10px;
+        }
+        .price {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+     <div class="menu-container">
+        <h1>BREAKFAST</h1>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/HnWnjX33/chana-bhatura.jpg" alt="chana bhatura">
+            <div class="item-name">Chana Bhatura</div>
+            <div class="price">₹70</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/8cy5vc0G/pav-bhaji.jpg" alt="Shahi Paneer">
+            <div class="item-name">Pav Bhaji</div>
+            <div class="price">₹80</div>
+        </div>
+
+      
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/m2Dhs3Pg/ambersar-naam.jpg" alt="Tawa Champ">
+            <div class="item-name">Ambersari Naan(with chana,raita)</div>
+            <div class="price">₹70</div>
+        </div>
+    </div>
+</body>
+</html>            <p></p>
+
+        </div>
+    </section>
+
+    <section class="section" onclick="toggleDetails('section2')">
+        <span class="click-here">Click Here</span>
+        <h2>SOYA CHAAP & PANEER TIKKA</h2>
+        <div id="section2" class="details">
+        <div <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOYA CHAAP & PANEER TIKKA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .menu-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-text {
+            flex-grow: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+     <div class="menu-container">
+        <h1>SOYA CHAAP & PANEER TIKKA</h1>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/gcwktzQx/masala-champ.jpg" alt="Kadai Paneer">
+            <div class="item-name">Masala Chaap</div>
+            <div class="price">₹120</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/Kcdc6XhJ/malai-champ.jpg" alt="Shahi Paneer">
+            <div class="item-name">Malai Chaap</div>
+            <div class="price">₹160</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/RCbJqb5H/achari-chap.jpg" alt="Paneer Labadar">
+            <div class="item-name">Achari Chaap</div>
+            <div class="price">₹120</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/xTJJmynF/paneer-tikka-masala.jpg" alt="Malai Kofta">
+            <div class="item-name">Paneer Tikka Masala </div>
+            <div class="price">₹150</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/DyX00vP9/paneer-malai-tikka.jpg" alt="Paneer Butter Masala">
+            <div class="item-name">Paneer Malai Tikka</div>
+            <div class="price">₹180</div>
+        </div>
+
+        
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/kgN5NTZw/paner-achar-tikka.jpg" alt="Tawa Champ">
+            <div class="item-name">Paneer Achari Tikka</div>
+            <div class="price">₹150</div>
+        </div>
+    </div>
+</body>
+</html>            <p></p>
+            
+        </div>
+    </section>
+
+    <section class="section" onclick="toggleDetails('section3')">
+        <span class="click-here">Click Here</span>
+        <h2>CHINESE </h2>
+        <div id="section3" class="details">
+        <div <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHINESE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .menu-container {
+            width: 100%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-text {
+            flex-grow: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+  <div class="menu-container">
+    <h1>CHINESE MENU</h1>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/VksNRq88/veg-momo.jpg" alt="Veg Momo">
+      <div class="item-name">Veg Momo (Half)</div>
+      <div class="price">₹40/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/VksNRq88/veg-momo.jpg" alt="Veg Momo">
+      <div class="item-name">Veg Momo (Full)</div>
+      <div class="price">₹80/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/pL0L1mWn/fried-momo.webp" alt="Fried Momo">
+      <div class="item-name">Fried Momo (Half)</div>
+      <div class="price">₹50/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/pL0L1mWn/fried-momo.webp" alt="Fried Momo">
+      <div class="item-name">Fried Momo (Full)</div>
+      <div class="price">₹100/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/fbJR4Myq/tandoori-momo.jpg" alt="Tandoori Momo">
+      <div class="item-name">Tandoori Momo</div>
+      <div class="price">₹100</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/1X4Hwn3c/cryspy-momo.jpg" alt="Crispy Momo">
+      <div class="item-name">Crispy Momo (Half)</div>
+      <div class="price">₹50/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/1X4Hwn3c/cryspy-momo.jpg" alt="Crispy Momo">
+      <div class="item-name">Crispy Momo (Full)</div>
+      <div class="price">₹100/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/nr51kFs8/veg-chowmin.jpg" alt="Veg Chowmein">
+      <div class="item-name">Veg Chowmein (Half)</div>
+      <div class="price">₹40/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/nr51kFs8/veg-chowmin.jpg" alt="Veg Chowmein">
+      <div class="item-name">Veg Chowmein (Full)</div>
+      <div class="price">₹80/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/vHJzxmFf/paneer-chowmin.jpg" alt="Paneer Chowmein">
+      <div class="item-name">Paneer Chowmein (Half)</div>
+      <div class="price">₹60/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/vHJzxmFf/paneer-chowmin.jpg" alt="Paneer Chowmein">
+      <div class="item-name">Paneer Chowmein (Full)</div>
+      <div class="price">₹100/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/2jXTmw0H/garlic-chowmin.jpg" alt="Chilli Garlic Chowmein">
+      <div class="item-name">Chilli Garlic Chowmein (Half)</div>
+      <div class="price">₹50/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/2jXTmw0H/garlic-chowmin.jpg" alt="Chilli Garlic Chowmein">
+      <div class="item-name">Chilli Garlic Chowmein (Full)</div>
+      <div class="price">₹90/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/rpcNgYpp/veg-tupka.jpg" alt="Veg Thupka">
+      <div class="item-name">Veg Thupka (Half)</div>
+      <div class="price">₹40/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/rpcNgYpp/veg-tupka.jpg" alt="Veg Thupka">
+      <div class="item-name">Veg Thupka (Full)</div>
+      <div class="price">₹80/-</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/C1xHpBkT/veg-manchurian.jpg" alt="Veg Manchurian">
+      <div class="item-name">Veg Manchurian</div>
+      <div class="price">₹140</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/HnfQM6Kd/chesse-chilly.jpg" alt="Cheese Chilli">
+      <div class="item-name">Cheese Chilli</div>
+      <div class="price">₹200</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/bJ5bX6qk/veg-choupsy.jpg" alt="Veg Choupsey">
+      <div class="item-name">Veg Choupsey</div>
+      <div class="price">₹80</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/rzXrsK0p/spring-roll.jpg" alt="Spring Roll">
+      <div class="item-name">Spring Roll</div>
+      <div class="price">₹80</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/7Pps09S5/fried-rice.jpg" alt="Fried Rice">
+      <div class="item-name">Fried Rice</div>
+      <div class="price">₹80</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.postimg.cc/jjmNmgxN/chilli-garlic-rice.jpg" alt="Chilli Garlic Rice">
+      <div class="item-name">Chilli Garlic Rice</div>
+      <div class="price">₹90</div>
+    </div>
+  </div>
+</body>
+</html>
+   <p></p>
+            
+        </div>
+    </section>
+
+    <section class="section" onclick="toggleDetails('section4')">
+        <span class="click-here">Click Here</span>
+        <h2>SOUTH INDIAN MENU</h2>
+        
+<div id="section4" class="details">
+<div <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUTH INDIAN MENU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .menu-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-text {
+            flex-grow: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+        <h1>SOUTH INDIAN MENU</h1>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/MTN83003/veg-uttapam.jpg" alt="Veg. Uttapam">
+            <div class="item-name">Veg. Uttapam</div>
+            <div class="price">₹90/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/yYCMJ8LR/onion-uttapam.jpg" alt="Onion Uttapam">
+            <div class="item-name">Onion Uttapam</div>
+            <div class="price">₹100/-</div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/zfv6mbGs/panner-uttapam.jpg" alt="Paneer Uttapam">
+            <div class="item-name">Paneer Uttapam</div>
+            <div class="price">₹120/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/mZ1cL8nD/plain-dosa.jpg" alt="Plain Dosa">
+            <div class="item-name">Plain Dosa</div>
+            <div class="price">₹70/-</div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/zXmyVTmk/masala-dosa.jpg" alt="Masala Dosa">
+            <div class="item-name">Masala Dosa</div>
+            <div class="price">₹90/-</div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/wTh7J3gY/onion-dosa.jpg" alt="Onion Dosa">
+            <div class="item-name">Onion Dosa</div>
+            <div class="price">₹100/-</div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/xddCWRH9/paneer-dosa.jpg" alt="Paneer Dosa">
+            <div class="item-name">Paneer Dosa</div>
+            <div class="price">₹120/-</div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/Bvw6sKcH/butter-plain-dosa.jpg" alt="Butter Plain Dosa">
+            <div class="item-name">Butter Plain Dosa</div>
+            <div class="price">₹80/-</div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/FRdKKHDq/butter-masala-dosa.jpg" alt="Butter Masala Dosa">
+            <div class="item-name">Butter Masala Dosa</div>
+            <div class="price">₹100/-</div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/cHnsS5JG/samber-vada.jpg" alt="Sambhar Vada">
+            <div class="item-name">Sambhar Vada</div>
+            <div class="price">₹80/-</div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/R08M2z4T/idly-samber.jpg" alt="Idly Sambhar">
+            <div class="item-name">Idly Sambhar</div>
+            <div class="price">₹100/-</div>
+        </div>
+    </div>
+</body>
+</html>
+     <p></p>
+           
+        </div>
+    </section>
+
+    <section class="section" onclick="toggleDetails('section5')">
+        <span class="click-here">Click Here</span>
+        <h2>PIZZA </h2>
+        <div id="section5" class="details">
+        <div <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .menu-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-text {
+            flex-grow: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+        <div class="menu-container">
+        <h1>PIZZA</h1>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/zXtXTh6M/veg-pizza.jpg" alt="Veg Pizza">
+            <div class="item-name">Veg. Pizza</div>
+            <div class="price">₹150/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/t48qMjXN/onion-capsicum-pizza.jpg" alt="Onion Capsicum Pizza">
+            <div class="item-name">Onion Capsicum Pizza</div>
+            <div class="price">₹160/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/Kz2ZmD3K/cheese-pizza.jpg" alt="Cheese Pizza">
+            <div class="item-name">Cheese Pizza</div>
+            <div class="price">₹180/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/d1jJ3ZG5/paneer-chilli-pizza.jpg" alt="Paneer Chilli Pizza">
+            <div class="item-name">Paneer Chilli Pizza</div>
+            <div class="price">₹190/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/ZnfZFk73/chesse-n-corn-pizza.jpg" alt="Cheese ‘N’ Corn Pizza">
+            <div class="item-name">Cheese ‘N’ Corn Pizza</div>
+            <div class="price">₹200/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/1tCYv9S9/mashroom-pizza.jpg" alt="Mushroom Pizza">
+            <div class="item-name">Mushroom Pizza</div>
+            <div class="price">₹200/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/5NFkmdRV/tamato-pizza.jpg" alt="Tomato Pizza">
+            <div class="item-name">Tomato Pizza</div>
+            <div class="price">₹160/-</div>
+        </div>
+    </div>
+</body>
+</html>
+
+ <p></p>
+            
+        </div>
+    </section>
+
+    <section class="section" onclick="toggleDetails('section6')">
+        <span class="click-here">Click Here</span>
+        <h2>CHAAT</h2>
+        <div id="section6" class="details">
+        <div <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAAT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .menu-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-text {
+            flex-grow: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="menu-container">
+        <h1>CHAAT</h1>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/65yg8GXY/gol-gappa-atta.jpg" alt="Gol Gappa">
+            <div class="item-name">Gol Gappa (Atta) (8 Pieces)</div>
+            <div class="price">₹40/-</div>
+        </div>
+
+        <div class="menu-item">
+           <img src="https://i.postimg.cc/5NTGLN91/gol-gappa-sooji.jpg" alt="Gol Gappa">
+            <div class="item-name">Gol Gappa (Sooji) (6 Pieces)</div>
+            <div class="price">₹40/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/y8RGP4WR/gol-gappa-with-dhai.jpg" alt="Gol Gappa">
+            <div class="item-name">Gol Gappa with Dhai (5 Pieces)</div>
+            <div class="price">₹80/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/VNBHxqqL/tikki-with-chatni.jpg" alt="Tikki">
+            <div class="item-name">Tikki with Chatni (2 Pieces)</div>
+            <div class="price">₹40/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/85pnN74d/tikki-with-chana.jpg" alt="Tikki">
+            <div class="item-name">Tikki with Chana (2 Pieces)</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/T2HHvYDm/samosa-with-chatni.jpg" alt="Samosa">
+            <div class="item-name">Samosa with Chatni (2 Pieces)</div>
+            <div class="price">₹30/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/ZKBsbt8Q/samosa-with-chana.jpg" alt="Samosa">
+            <div class="item-name">Samosa with Chana (2 Pieces)</div>
+            <div class="price">₹50/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/Cx02mr86/tikki-samosa-with-chana.jpg" alt="Tikki Samosa">
+            <div class="item-name">Tikki Samosa with Chana</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/7Yn9YHCm/chat-pappri.jpg" alt="Chaat Pappri">
+            <div class="item-name">Chaat Pappri</div>
+            <div class="price">₹80/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/VksRJxn1/dhai-bhala.jpg" alt="Dhai Bhalla">
+            <div class="item-name">Dhai Bhalla</div>
+            <div class="price">₹80/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/rwh9xfN4/veg-thali.jpg" alt="Veg Thali">
+            <div class="item-name"><b>Veg. Thali</b></div>
+            <div class="price">₹120/-</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-name">(Rice, 2 Roti, Paneer Vegetable, Dal, Raita, Salad)</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/QMHJbcfy/rajma-rice.jpg" alt="Rajmah Rice">
+            <div class="item-name">Rajmah Rice</div>
+            <div class="price">₹80/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/V6tBymQ9/chana-rice.jpg" alt="Chana Rice">
+            <div class="item-name">Chana Rice</div>
+            <div class="price">₹80/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/JzrhBrXz/kadi-rice.jpg" alt="Kadi Rice">
+            <div class="item-name">Kadi Rice</div>
+            <div class="price">₹80/-</div>
+        </div>
+
+    </div>
+</body>
+</html>
+  <p></p>
+   </div>
+    </section>
+
+    <section class="section" onclick="toggleDetails('section7')">
+        <span class="click-here">Click Here</span>
+        <h2>SNACKS</h2>
+        <div id="section7" class="details">
+        <div <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .menu-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-text {
+            flex-grow: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+        <h1>SNACKS</h1>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/wB1BtdP4/masala-kulcha.jpg" alt="Masala Kulcha">
+            <div class="item-name">Masala Kulcha</div>
+            <div class="price">₹50/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/8Pwkt5gn/paneer-culcha.jpg" alt="Paneer Kulcha">
+            <div class="item-name">Paneer Kulcha</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/NMwwgqwH/paneer-sandwich-grilled.jpg" alt="Paneer Sandwich Grilled">
+            <div class="item-name">Paneer Sandwich Grilled</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/gkcLY1YQ/veg-sandwitch-grilled.jpg" alt="Veg. Sandwich Grilled">
+            <div class="item-name">Veg. Sandwich Grilled</div>
+            <div class="price">₹50/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/zXP6zbmh/veg-burger.jpg" alt="Veg. Burger">
+            <div class="item-name">Veg. Burger</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/B6g7dtcX/chesse-burger.jpg" alt="Cheese Burger">
+            <div class="item-name">Cheese Burger</div>
+            <div class="price">₹60/-</div>
+        </div>
+    </div>
+</body>
+</html>
+   <p></p>
+            
+        </div>
+    </section>
+
+    <section class="section" onclick="toggleDetails('section8')">
+        <span class="click-here">Click Here</span>
+        <h2>SHAKES & COFFEE</h2>
+       
+ <div id="section8" class="details">
+<div <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .menu-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-text {
+            flex-grow: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="menu-container">
+        <h1>Shakes & Coffee</h1>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/ryv04gLF/strawberry-shake.jpg" alt="Strawberry Shake">
+            <div class="item-name">Strawberry Shake</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/QNWVj5WL/chocolate-shake.jpg" alt="Chocolate Shake">
+            <div class="item-name">Chocolate Shake</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/4yzJV6zm/vanila-shake.jpg" alt="Vanilla Shake">
+            <div class="item-name">Vanilla Shake</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/rm2WkJFp/cold-coffie.jpg" alt="Cold Coffee">
+            <div class="item-name">Cold Coffee</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/dVzZ2BC9/laassi-sw-eet.jpg" alt="Lassi Sweet">
+            <div class="item-name">Lassi Sweet</div>
+            <div class="price">₹25/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/T1YKdH8T/expresso-coffie.jpg" alt="Espresso Coffee">
+            <div class="item-name">Espresso Coffee</div>
+            <div class="price">₹40/-</div>
+        </div>
+    </div>
+</body>
+</html>         <p>\</p>
+            
+        </div>
+    </section>
+
+    <section class="section" onclick="toggleDetails('section9')">
+         <span class="click-here">Click Here</span>
+        <h2>DESSERT </h2>
+        <div id="section9" class="details">
+         <div <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .menu-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+     
+
+
+
+
+
+
+
+  }
+        h1 {
+            color: #d32f2f;
+        }
+        h2 {
+            color: #333;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-text {
+            flex-grow: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+      <div class="menu-container">
+        <h1>Dessert Menu</h1>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/3rnYGF00/gulab-jamun.jpg" alt="Gulab Jamun">
+            <div class="item-name">Gulab Jamun</div>
+            <div class="price">₹40/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/pXw75mCn/rasmalai.jpg" alt="Rasmalai">
+            <div class="item-name">Rasmalai</div>
+            <div class="price">₹80/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/MHcPvwjD/strawberry-ice-cream.jpg" alt="Strawberry Ice Cream">
+            <div class="item-name">Strawberry Ice Cream</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/zBsND8dC/vanila-ice-cream.jpg" alt="Vanilla Ice Cream">
+            <div class="item-name">Vanilla Ice Cream</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/yNWCFkth/pista-ice-cream.jpg" alt="Pista Ice Cream">
+            <div class="item-name">Pista Ice Cream</div>
+            <div class="price">₹60/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/kGmHh41p/mix-ice-cream.jpg" alt="Mix Ice Cream">
+            <div class="item-name">Mix Ice Cream</div>
+            <div class="price">₹70/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/Lhd8WzKM/chocolate-ice-cream.jpg" alt="Chocolate Ice Cream">
+            <div class="item-name">Chocolate Ice Cream</div>
+            <div class="price">₹70/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/rF64349m/kaju-pista-ice-cream.jpg" alt="Kaju Kishmish Ice Cream">
+            <div class="item-name">Kaju Kishmish Ice Cream</div>
+            <div class="price">₹70/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/x15bX4VJ/butter-scotch-ice-cream.jpg" alt="Butter Scotch Ice Cream">
+            <div class="item-name">Butter Scotch Ice Cream</div>
+            <div class="price">₹70/-</div>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://i.postimg.cc/c4VFD6vM/tutti-fruiti-ice-cream.jpg" alt="Tutti Fruiti Ice Cream">
+            <div class="item-name">Tutti Fruiti Ice Cream</div>
+            <div class="price">₹70/-</div>
+        </div>
+
+  <div class="menu-item">
+            <img src="https://i.postimg.cc/8kxYYZ36/black-currant-ice-cream.jpg" alt="Black Currant Ice Cream">
+            <div class="item-name">Black Currant Ice Cream</div>
+            <div class="price">₹70/-</div>
+        </div>
+    </div>
+</body>
+</html>      
+
+
+
+
+
+
+
+
+   <p></p>
+         
+        </div>
+    </section>
+
+    <section class="section" onclick="toggleDetails('section10')">
+       
+        <h2>THANKYOU</h2>
+        <div id="section10" class="details">
+         <div <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THANKYOU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .menu-container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        h2 {
+            background: #ff9800;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .menu-text {
+            flex-grow: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .price {
+            font-weight: bold;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div THANKYOU FOR VISITING </div><div class="price">HAVE A NICE DAY</div></div>
+    </div>
+</body>
+</html>
+   
+ <p></p>
+
+ </div>
+    </section>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block"; // Show details
+            } else {
+                details.style.display = "none"; // Hide details
+            }
+        }
+    </script>
+
+</body>
+</html>
